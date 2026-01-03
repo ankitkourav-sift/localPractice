@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Show Hide Task</title>
+
+    <style>
+        body{
+            background-color: #f0f8ff;
+            text-align: center;
+            font-family: Arial;
+            padding: 40px;
+        }
+
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 6px;
+            border: none;
+            background-color: green;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        p{
+            font-size: 18px;
+            margin-top: 20px;
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+
+        img{
+            margin-top: 20px;
+            width: 200px;
+            transition: transform 0.4s ease;
+        }
+
+        img:hover{
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Show / Hide with Effects</h1>
+
+    <p id="para">This is a paragraph.</p>
+
+    <img src="mrbeast.jpg" id="img">
+
+    <br><br>
+
+    <button onclick="toggle()">Hide Content</button>
+
+    <script>
+        let visible = true;
+
+        function toggle(){
+            let para = document.getElementById("para");
+            let img = document.getElementById("img");
+            let btn = document.querySelector("button");
+
+            if(visible){
+                para.style.opacity = "0";
+                img.style.opacity = "0";
+                btn.innerText = "Show Content";
+                btn.style.backgroundColor = "red";
+                visible = false;
+            }else{
+                para.style.opacity = "1";
+                img.style.opacity = "1";
+                btn.innerText = "Hide Content";
+                btn.style.backgroundColor = "green";
+                visible = true;
+            }
+        }
+    </script>
+
+</body>
+</html>

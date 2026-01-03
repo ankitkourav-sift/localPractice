@@ -1,0 +1,26 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="text" id="num">
+        <button onclick="checkNumber()">Check Number</button>
+        <p id="output"></p>
+        <script>
+            function checkNumber(){
+                let num = document.getElementById("num").value;
+                let output = document.getElementById("output");
+                ///num = Number(num);
+
+                if(num.length===0){
+                    alert("Cann't be empty")
+                }
+         
+                else{
+                    output.innerText = num;
+                    output.style.color = "green";
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+<head>
+    <style>
+        body{
+            background-color: white;
+            text-align: center;
+            padding: 40px;
+            font-family: Arial;
+        }
+        #result{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<p id="result">Enter a number</p>
+<input type="number" id="num">
+<button onclick="submit()">Submit</button>
+
+<script>
+    let num = document.getElementById("num");
+    let result = document.getElementById("result");
+
+    function submit(){ 
+        let value = Number(num.value);
+
+        if(value > 0){
+            result.innerText = "Positive Number";
+            result.style.color = "green";
+        }
+        else if(value < 0){
+            result.innerText = "Negative Number";
+            result.style.color = "red";
+        }
+        else{
+            result.innerText = "Zero";
+            result.style.color = "black";
+        }
+    }
+</script>
+
+</body>
+</html>
+

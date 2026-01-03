@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form>
+
+        <h2>Personal Details</h2>
+
+        <label>Full Name:</label>
+        <input type="text" name="fullname" required><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Contact Number:</label>
+        <input type="number" name="phone" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <br><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" required><br><br>
+
+        <label>Address:</label><br>
+        <textarea rows="4" cols="40" name="address"></textarea>
+        <br><br>
+
+        <h2>Course Details</h2>
+
+        <label>Select Course:</label>
+        <select name="course">
+            <option value="bsc">BSc</option>
+            <option value="btech">BTech</option>
+            <option value="msc">MSc</option>
+            <option value="mern">MERN Stack</option>
+        </select>
+        <br><br>
+
+        <h2>Photo Upload</h2>
+        <label>Upload Photo:</label>
+        <input type="file" name="photo">
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>

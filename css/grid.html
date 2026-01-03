@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Image Gallery</title>
+    <style>
+    h1 {text-align: center;
+        
+}    
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        /* Grid Container */
+        .grid-container {
+            display: grid;                        
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 10px; /* grid-gap ki jagah modern browsers me gap use karo */
+        }
+/* Grid Images */
+        .grid-container img {
+            width: 100%;                           
+            border-radius: 10px;                   
+            transition: transform 0.3s;            
+        }
+.grid-container img:hover {
+            transform: scale(1.1);                 
+            cursor: pointer;                       
+        }
+@media (max-width: 800px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+@media (max-width: 500px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Grid Image Gallery</h1>
+
+    <div class="grid-container">
+        <img src="A7VVCiDnS0W4461rX_Rsmw.jpg" alt="Image 1">
+        <img src="A7VVCiDnS0W4461rX_Rsmw.jpg" alt="Image 2">
+        <img src="A7VVCiDnS0W4461rX_Rsmw.jpg" alt="Image 3">
+        <img src="banner-2.jpg" alt="Image 4">
+        <img src="banner-2.jpg" alt="Image 5">
+        <img src="banner-2.jpg" alt="Image 6">
+    </div>
+
+</body>
+</html>

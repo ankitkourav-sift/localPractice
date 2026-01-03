@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>counter</title>
+
+        <style>
+
+       body{
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 50px;
+        background-color: antiquewhite;
+       }  
+       h1{
+        color: darkblue;
+       }   
+       button{
+        color: violet;
+       }
+       button:hover{
+        transform: scale(1.2);
+       cursor: pointer;
+    }
+
+        </style>
+    </head>
+    <body>
+        <h1> Counter</h1>
+        <button onclick="decrement()">-</button>
+        <span id="count">0</span>
+        <button onclick="increment()">+</button> 
+        <button onclick="reset()">Reset</button>   
+        <script>
+            let count = 0;
+            function updatefun(){
+               let c= document.getElementById("count");
+                
+                if(count>0){
+                    c.style.color = "green";
+                }
+                else if(count<0){
+                    c.style.color = "red";
+                }
+                else{
+                    c.style.color = "black";
+                }
+            }
+
+            function increment() {
+                count++;
+                document.getElementById("count").innerText = count;updatefun();
+            }
+
+            function decrement() {
+                count--;
+                document.getElementById("count").innerText = count;updatefun();
+            }
+            function reset() {
+                count = 0;
+                document.getElementById("count").innerText = count;updatefun();
+            }
+            </script>
+    </body>
+</html>

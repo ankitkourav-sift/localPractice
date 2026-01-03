@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Cards Example</title>
+    <style>
+        /* Container Flexbox */
+        .container {
+           display: flex;                   /* Flex container banaya */
+            justify-content: space-around;   /* Cards ke beech space */
+            align-items: center;             /* Vertical center alignment */
+            margin-top: 50px;
+        }
+
+        /* Individual Card */
+        .card {
+            background-color: #f2f2f2;
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        /* Hover Effect on Card */
+        .card:hover {
+            transform: scale(1.05);          /* Card thoda bada ho jaye hover par */
+            cursor: pointer;
+        }
+
+        /* Card Elements Styling */
+        .card h2 {
+            font-family: "Arial", sans-serif;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .card button {
+            padding: 8px 15px;
+            margin-top: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .card button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive – Mobile */
+        @media (max-width: 800px) {
+            .container {
+                flex-direction: column;       /* Small screen par vertically stack */
+                align-items: center;
+            }
+            .card {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align:center;">Flexbox Cards Example</h1>
+
+    <div class="container">
+        <div class="card">
+            <h2>Card 1</h2>
+            <p>This is the content of card 1. Flexbox makes alignment easy.</p>
+            <button>Click Me</button>
+        </div>
+        <div class="card">
+            <h2>Card 2</h2>
+            <p>This is the content of card 2. Spacing and hover effects included.</p>
+            <button>Click Me</button>
+        </div>
+        <div class="card">
+            <h2>Card 3</h2>
+            <p>This is the content of card 3. Responsive layout included.</p>
+            <button>Click Me</button>
+        </div>
+    </div>
+   
+
+</body>
+</html>

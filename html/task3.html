@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Profile Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            background: #4a90e2;
+            color: white;
+            padding: 20px 0;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #222;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        /* Table */
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background: #ddd;
+        }
+
+        /* List */
+        .subjects {
+            width: 90%;
+            margin: auto;
+        }
+
+        /* Image */
+        .profile-img {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+        }
+
+        /* Biodata */[p]
+        .bio {
+            width: 90%;
+            margin: auto;
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        /* Form */
+        form {
+            width: 90%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        input, textarea {
+            width: 95%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #4a90e2;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Student Profile Page</h1>
+        <p>Welcome to My Profile Website</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Student Data Table -->
+    <table>
+        <tr>
+            <th>Field</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>Ankit</td>
+        </tr>
+        <tr>
+            <td>Class</td>
+            <td>B.Sc 5th Sem</td>
+        </tr>
+        <tr>
+            <td>Roll No</td>
+            <td>12345</td>
+        </tr>
+        <tr>
+            <td>College</td>
+            <td>Your College Name</td>
+        </tr>
+        <tr>
+            <td>Favorite Language</td>
+            <td>JavaScript</td>
+        </tr>
+    </table>
+
+    <!-- Subjects List -->
+    <div class="subjects">
+        <h2>Subjects</h2>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>DBMS</li>
+            <li>Operating System</li>
+        </ol>
+    </div>
+
+    <!-- Profile Image -->
+    <img src="https://via.placeholder.com/150" class="profile-img">
+
+    <!-- Biodata Paragraph -->
+    <div class="bio">
+        <p>
+            My name is Ankit. I am studying in B.Sc 5th Semester.
+            I love coding and web development.
+        </p>
+    </div>
+
+    <!-- Contact Form -->
+    <form>
+        <h2>Contact Me</h2>
+
+        <label>Name</label><br>
+        <input type="text"><br><br>
+
+        <label>Email</label><br>
+        <input type="email"><br><br>
+
+        <label>Message</label><br>
+        <textarea rows="4"></textarea><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

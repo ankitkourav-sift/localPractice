@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <style>
+
+         body{
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 50px;
+        background-color: antiquewhite;
+         }
+         #A{background-color: red;
+            color: white;
+         }
+           #b{background-color: green;
+            color: white;
+         }
+           #c{background-color: yellow;
+            color: white;
+         }
+           #d{background-color: blue;
+            color: white;
+         }
+         
+        </style>
+    </head>
+    <body>
+        <button id="A" onclick="redcolor()">Red</button>
+        <button id="b" onclick="Greencolor()">Green</button>
+        <button id="c"onclick="Yellowcolor()">Yellow</button>
+        <button id="d" onclick="Bluecolor()">Blue</button>
+        <script>
+            function redcolor(){
+                document.body.style.backgroundColor="red";
+            }
+            function Greencolor(){
+                document.body.style.backgroundColor="Green";
+            }
+            function Yellowcolor(){
+                document.body.style.backgroundColor="Yellow";
+            }
+            function Bluecolor(){
+                document.body.style.backgroundColor="Blue";
+            }
+        </script>
+    </body>
+</html>

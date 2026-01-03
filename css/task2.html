@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result Table</title>
+
+    <style>
+
+        table {
+            width: 70%;
+            border-collapse: collapse;
+            font-family: "Courier New";
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #444;
+            padding: 10px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        /* Heading Styling */
+        th {
+            background-color: #333;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /* Alternate Row (Zebra Effect) */
+        tr:nth-child(even) {
+            background-color: #f0f0f0;
+            letter-spacing: 2px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        /* Hover Effect */
+        tr:hover {
+            background-color: #d0e6ff;
+            cursor: pointer;
+        }
+
+        /* Grade colors */
+        .high {
+            color: green;
+            font-weight: bold;
+        }
+
+        .mid {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .low {
+            color: red;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Student Result Details</h1>
+
+    <table>
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Marks</th>
+            <th>Grade</th>
+        </tr>
+
+        <tr>
+            <td>111</td>
+            <td>Ankit</td>
+            <td>BSc</td>
+            <td>92</td>
+            <td class="high">A+</td>
+        </tr>
+
+        <tr>
+            <td>112</td>
+            <td>Ankita</td>
+            <td>BCA</td>
+            <td>78</td>
+            <td class="mid">B</td>
+        </tr>
+
+        <tr>
+            <td>113</td>
+            <td>Yash</td>
+            <td>BSc</td>
+            <td>60</td>
+            <td class="low">C</td>
+        </tr>
+
+        <tr>
+            <td>114</td>
+            <td>Ravi</td>
+            <td>B.Tech</td>
+            <td>88</td>
+            <td class="mid">B+</td>
+        </tr>
+
+        <tr>
+            <td>115</td>
+            <td>Neha</td>
+            <td>BSc</td>
+            <td>95</td>
+            <td class="high">A+</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>

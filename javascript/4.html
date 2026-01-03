@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Button</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 50px;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        button {
+            padding: 15px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Interactive Button Example</h2>
+
+    <button id="myButton" onclick="changeButton()">Click Me!</button>
+
+    <script>
+        function changeButton() {
+            let button = document.getElementById("myButton");
+
+            // Change background color randomly
+            let colors = ["#e74c3c", "#3498db", "#f1c40f", "#9b59b6"];
+            let randomColor = colors[Math.floor(Math.random() * colors.length)];
+            button.style.backgroundColor = randomColor;
+
+            // Change button text
+            button.innerText = "Clicked!";
+        }
+    </script>
+
+</body>
+</html>
